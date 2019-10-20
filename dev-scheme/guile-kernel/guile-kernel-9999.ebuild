@@ -5,7 +5,7 @@ EAPI=6
 
 inherit git-r3
 
-DESCRIPTION="A jupyter kernel for GNU guile"
+DESCRIPTION="GNU Guile Scheme kernel for Jupyter Notebook"
 HOMEPAGE="https://github.com/jerry40/guile-kernel"
 EGIT_REPO_URI="https://github.com/jerry40/guile-kernel"
 
