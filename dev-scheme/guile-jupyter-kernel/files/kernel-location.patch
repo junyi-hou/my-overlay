@@ -1,0 +1,13 @@
+# patch the kernel location
+diff --git a/src/kernel.json b/src/kernel.json
+index 934ba1e..fe56a06 100644
+--- a/src/kernel.json
++++ b/src/kernel.json
+@@ -1,6 +1,6 @@
+ {
+     "argv": ["guile", "-s",
+-             "/usr/local/share/jupyter/kernels/guile/guile-kernel/src/guile-jupyter-kernel.scm",
++             "/usr/share/jupyter/kernels/guile/guile-jupyter-kernel.scm",
+              "--", "{connection_file}"],
+     "display_name": "Guile",
+     "language": "scheme"

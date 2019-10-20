@@ -1,0 +1,16 @@
+# make buf-size 4 times bigger so codes in a Jupyter cell can be
+# 4 times longer
+# see https://github.com/jerry40/guile-kernel for details
+diff --git a/src/simple-zmq.scm b/src/simple-zmq.scm
+index 407591e..61b0f0e 100644
+--- a/src/simple-zmq.scm
++++ b/src/simple-zmq.scm
+@@ -166,7 +166,7 @@
+             ZMQ_POLLOUT
+             ZMQ_POLLERR))
+ 
+-(define BUF-SIZE 4096)
++(define BUF-SIZE 16384)
+ (define MSG-ENCODING "UTF8")
+ 
+ (define zmq (dynamic-link "libzmq"))
